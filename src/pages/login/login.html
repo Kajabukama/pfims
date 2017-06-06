@@ -1,0 +1,23 @@
+<ion-content padding class="background">
+    <div class="spacer"></div>
+    <div class="title-section">
+        <h1>Login</h1>
+        <p>Please use your email address and password to Signin</p>
+    </div>
+    <div class="spacer"></div>
+    <form (ngSubmit)="login(user.value)" #user="ngForm">
+        <ion-item>
+            <ion-label>Email</ion-label>
+            <ion-input type="text" name="email" ngModel required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Password</ion-label>
+            <ion-input type="password" name="password" ngModel required></ion-input>
+        </ion-item>
+        <div class="spacer"></div>
+        <button ion-button color="positive" block>Signin</button>
+
+    </form>
+    <div class="spacer"></div>
+    <button ion-button block clear color="light" (click)="signup()">Signup</button>
+</ion-content>

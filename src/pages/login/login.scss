@@ -1,0 +1,19 @@
+page-login {
+    .background {
+        background: #159957;
+        background: -webkit-linear-gradient(to top, #155799, #159957);
+        background: linear-gradient(to top, #155799, #159957);
+    }
+    .bg {
+        background: url(./assets/img/bg.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .background h2 {
+        text-align: center;
+        color: #fff;
+    }
+    .spacer {
+        width: 300px;
+        height: 35px;
+    }
+}
